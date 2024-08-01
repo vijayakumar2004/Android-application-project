@@ -1,0 +1,13 @@
+namespace Mauisampleprogram 
+{
+
+
+    public partial class Details : ContentPage
+    {
+        public Details()
+        {
+            InitializeComponent();
+        }
+        
+    }
+}
