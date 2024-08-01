@@ -1,0 +1,28 @@
+
+
+namespace Mauisampleprogram
+{
+    public partial class MainPage : ContentPage
+    {
+       
+
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void next(object sender, EventArgs e)
+        {
+            App.Current.MainPage.Navigation.PushAsync(new signpage());
+        }
+
+        private void Alert(object sender, EventArgs e)
+        {
+            Application.Current.MainPage.DisplayAlert("Alert", "Please sign up", "Cancel");
+
+
+
+        }
+    }
+
+}
