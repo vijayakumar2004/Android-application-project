@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mauisampleprogram.signpage"
+             Title="signpage">
+    <VerticalStackLayout>
+        <Label Text="Name"
+               VerticalOptions="Start"
+               HorizontalOptions="Start"
+               FontAttributes="Bold"/>
+        <Entry x:Name="txtFirstName"
+            Text=""
+               Placeholder="First Name"/>
+        <Entry  x:Name="txtLastName"
+                Text=""
+               Placeholder="Last Name"/>
+        <StackLayout>
+            <Label Text="choose your gender" 
+                   FontAttributes="Bold"/>
+            <RadioButton Content="Female" />
+            <RadioButton Content="Male" />
+        </StackLayout>
+        <Label 
+            Text="Email Address"
+               VerticalOptions="Start"
+               HorizontalOptions="Start"
+               FontAttributes="Bold"/>
+        <Entry  x:Name="txtEmName" 
+                Text=""
+               Placeholder="Email id"/>
+            <Label 
+                Text="Enter your password"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start"
+                   FontAttributes="Bold"/>
+        <Entry  x:Name="txtPassName"
+                Text=""
+                   Placeholder="password"/>
+            <Label 
+                Text="Retype your password"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"
+                   FontAttributes="Bold"/>
+        <Entry x:Name="txtRepassName"
+               Text=""
+                   Placeholder="confirm password"/>
+        <Button Text="Submit"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Clicked="next"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
