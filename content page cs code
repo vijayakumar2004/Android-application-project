@@ -1,0 +1,9 @@
+namespace Mauisampleprogram;
+
+public partial class contactpage : ContentPage
+{
+	public contactpage()
+	{
+		InitializeComponent();
+	}
+}
