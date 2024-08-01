@@ -1,0 +1,20 @@
+namespace Mauisampleprogram;
+
+public partial class signpage : ContentPage
+{
+	public signpage()
+	{
+		InitializeComponent();
+	}
+    private void next(object sender, EventArgs e)
+    {
+        var strfirstname = txtFirstName.Text;
+        var strlastname = txtLastName.Text;
+        var stremailname = txtEmName.Text;
+        var strpassname = txtPassName.Text;
+        var strrepassname= txtRepassName.Text;
+        App.Current.MainPage.Navigation.PushAsync(new Details());
+    }
+
+
+}
