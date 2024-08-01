@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mauisampleprogram.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+     Padding="30,0"
+     Spacing="25">
+            <Image
+         Source="logo.png"
+         HeightRequest="200"
+         Aspect="AspectFit"
+         SemanticProperties.Description="Beyondex Solutions private lmt" />
+            <Label Text="BeyondEx Solution Private Limited"
+            FontSize="30"
+            FontAttributes="Bold"/>
+
+
+
+
+            <Button
+         Text="Sign/up" 
+         HorizontalOptions="CenterAndExpand"
+         WidthRequest="120"
+         Clicked="next"/>
+            <Button Text="login"
+             HorizontalOptions="CenterAndExpand"
+             WidthRequest="120"
+             Clicked="Alert"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
